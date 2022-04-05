@@ -29,9 +29,24 @@ body {
     margin: auto;
     padding: 3em;
     width: 25em;
-    height: 30em;
+    height: 33em;
     align-self: center;
     text-align: center;
+    border-radius: 3%;
+    box-shadow:  5px 5px 10px rgb(18, 18, 18);
+
+}
+.form-holder:hover {
+    animation: form-selector 1s;
+    animation-fill-mode: both;
+}
+@keyframes form-selector {
+    0% {
+        background-color: #646464;
+    }
+    100% {
+        background-color: #8e8e8e;
+    }
 }
  ul {
      margin: 0;
@@ -61,12 +76,16 @@ form {
     font-size: .85em;
     text-align: left;
 }
-
+#user-req {
+    list-style-type: '>';
+    padding-inline-start: 1ch;
+    right: 2ch;
+}
 #user-box {
-    background-color: #e7e7e7;
+    background-color: #c2c2c2;
 }
 #password-box {
-    background-color: #e7e7e7;
+    background-color: #c2c2c2;
 }
 #submit-btn {
     margin: 2em;

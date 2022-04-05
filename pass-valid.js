@@ -10,13 +10,17 @@ function checkCredentials(){
         console.log('The password is valid.')
     }
     else {
-        alert(`${passInput} is not a valid password. Please try again.`);
+        alert('The username or password is not valid. Please try again.');
     }
 }
 
 function passwordPass(userInput, passInput) {
     const specialChara = /[`!@#$%^&*()_+\-=\[\]{};':'\\|,.<>\/?~]/;
     
+    if (specialChara.test(userInput)){
+        console.log('Username may not contain a special symbol.')
+        return false;
+    }
     if (!specialChara.test(passInput)) {
         console.log('Password does not contain a symbol.')
         return false;
