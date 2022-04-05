@@ -37,7 +37,5 @@ function passwordPass(userInput, passInput) {
         console.log('Password is invalid. Password is shorter than 8 characters, has a space or contains the username.');
         return false;
     }
-    else    {
-        return true;
-    }
+    return true;
 }
